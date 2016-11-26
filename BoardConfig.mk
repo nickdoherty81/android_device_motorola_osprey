@@ -20,7 +20,7 @@ include device/motorola/msm8916-common/BoardConfigCommon.mk
 DEVICE_PATH := device/motorola/osprey
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := osprey,osprey_umts,osprey_u2,osprey_ud2,osprey_uds,osprey_cdma,osprey_sprint,osprey_udstv
+TARGET_BOOTLOADER_BOARD_NAME := osprey
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Init
@@ -39,6 +39,3 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4865261568 # 4751232 * 1024 mmcblk0p42
 
 # Power
 TARGET_POWERHAL_HEADER_PATH := $(DEVICE_PATH)/power
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
